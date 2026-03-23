@@ -8,7 +8,7 @@ $page = $_GET['page'] ?? 'home';
 
 ob_start();
 
-$pageFile = "pages/" . $page . ".php";
+$pageFile = "stranky/" . $page . ".php";
 if (!file_exists($pageFile)) {
     $pageFile = "pages/not_found.php";
 }
